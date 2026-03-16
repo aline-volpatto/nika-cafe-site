@@ -1,0 +1,355 @@
+:root{
+    --cor-primaria:rgba(69, 51, 37);
+    --cor-clara:#F5E9DA;
+    --cor-areia:#E6D5C3;
+    --cor-destaque: #C58C5A;
+    --cor-texto: #2B1D1D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.botao-voltar{
+ display: inline-block;
+  padding: 12px 20px;
+  background-color: rgb(69, 51, 37);
+  color: var(--cor-areia);
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.botao-voltar:hover{
+  background-color: rgb(90, 70, 55);
+}
+
+
+/*Cabeçalho da página*/ 
+ body.home{
+    background-color: var(--cor-areia);
+    margin:0;
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+
+ .inicial{
+    padding: 8px 0;
+    background-color:var(--cor-primaria);
+    color: var(--cor-clara);
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: normal;
+    padding-top: 0;
+    margin-top: 0;
+ }
+
+img.logo-nika{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+ }
+
+ 
+ .titulo-pagina{
+    background-color:var(--cor-primaria);
+    color: var(--cor-clara);
+    font-size: xx-large;
+    font-weight:bold;
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    gap: 0px;
+    margin: 0px;
+    margin-bottom: 0px;
+ }
+
+ ul{
+    color: var(--cor-clara);
+    background-color:var(--cor-primaria);
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+    white-space: nowrap;
+    padding: 10px 20px;
+    margin: 0px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 0px;
+ }
+
+ nav a{
+    text-decoration: none;
+    color:var(--cor-areia);
+ }
+
+  nav a:hover{
+    text-decoration: none;
+    color:#806447
+ }
+
+
+
+/*Corpo do site*/
+.hero{
+    background-color: var(--cor-primaria);
+    color: var(--cor-areia);
+    padding: 40px;
+    line-height: 1.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.quem-somos,
+.nosso-cafe,
+.atendimento,
+.acompanhamento-div{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    font-family: sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--cor-texto);
+}
+
+.acompanhamento-div{
+    background-color: #e6d5c36a;
+    border-radius: 2%;
+}
+
+.texto-inicial,
+.texto-acompanhamentos{
+    flex: 1;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 1.2em;
+}
+
+.imagem-inicial img,
+.imagem-acompanhamentos img{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.conteudo-inicial{
+    max-width: 600px;
+}
+
+
+@media (max-width: 768px){
+
+  .atendimento,
+  .nosso-cafe,
+  .quem-somos{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .imagem-inicial img,
+  .imagem-acompanhamentos img{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .atendimento,
+  .nosso-cafe,
+  .quem-somos,
+  .acompanhamento-div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .imagem-inicial img,
+  .imagem-acompanhamentos img{
+    width: 360px;
+  }
+
+
+}
+
+#btn-topo{
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--cor-texto);
+    color: var(--cor-areia);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+body.preparar-cafe,
+.acompanhamentos-corpo{
+    background-image: linear-gradient(rgba(69,51,37,0.4), rgba(69,51,37,0.4)),url("quem-somos.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header-preparar-cafe,
+.header-acompanhamentos{
+   background-color: var(--cor-primaria);
+    color: var(--cor-areia);
+    line-height: 1.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;  
+    border-radius: 2%;
+    margin: auto;
+    padding: 50px;
+}
+
+
+
+
+
+.metodo{
+    display: block;
+    gap: 80px;
+    padding: 40px;
+    justify-content: flex-start;
+    text-align: left;
+    font-family: sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--cor-texto);
+    background-color: #e6d5c36a;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-bottom: 60px;
+}
+
+.acompanhamento{
+    background-color: #e6d5c36a;
+    color: var(--cor-texto);
+    line-height: 1.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    padding: 50px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+footer{
+    display: block;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-areia);
+    margin: 0%;
+}
+
+
+
+
+
+body.pagina-contato{
+    background-color: var(--cor-areia);
+    margin:0;
+}
+
+
+.header-contato{
+    background-color: var(--cor-primaria);
+    color: var(--cor-clara);
+    text-align:center;
+    padding:40px 20px;
+    font-family:sans-serif;
+}
+
+
+.contato-container{
+    max-width:600px;
+    margin:40px auto;
+    padding:40px;
+    background-color:#ffffffcc;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    font-family:sans-serif;
+}
+
+
+.campo{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.campo label{
+    margin-bottom:6px;
+    font-weight:600;
+    color:var(--cor-texto);
+}
+
+.campo input,
+.campo textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    font-family:sans-serif;
+}
+
+
+.campo input:focus,
+.campo textarea:focus{
+    outline:none;
+    border-color:var(--cor-destaque);
+    box-shadow:0 0 3px rgba(197,140,90,0.5);
+}
+
+
+.botao-enviar{
+    background-color:var(--cor-primaria);
+    color:var(--cor-clara);
+    border:none;
+    padding:14px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    width:100%;
+}
+
+.botao-enviar:hover{
+    background-color:#5a4637;
+}
+
+
+@media (max-width:768px){
+
+.contato-container{
+    margin:20px;
+    padding:25px;
+}
+
+}
